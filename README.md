@@ -1,4 +1,4 @@
-Work in Prgress website
+Work in Progress portfolio website
 
 Using Twig, and Craft CMS
 
