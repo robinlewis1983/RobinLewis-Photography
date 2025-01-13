@@ -1,0 +1,29 @@
+
+
+{# You can omit the `.twig` when referencing another template: #}
+{% extends '_layout' %}
+
+{# Provide something to the `content` block in `_layout.twig`: #}
+{% block content %}
+ 
+{% set clientBlockQuery = entry.pageContent.all() %}
+
+
+  <div class="mediaTextDiv">  
+      {% for clientBlockPrint in clientBlockQuery %}
+
+
+            {% include 'includes/cp.mediatext.twig' with {
+                mediahHeader: clientBlockPrint.header,
+                mediaSubHeader: clientBlockPrint.subHeader,
+                mediaCompanyName: clientBlockPrint.companyName,
+                mediaContentQoute: clientBlockPrint.contentText,
+                mediaContentImg: clientBlockPrint.contentImage,
+            } %}
+               
+        {% endfor %}
+    </div>
+  
+    {% include 'includes/cp.clientlist.twig'%}
+   
+{% endblock %}

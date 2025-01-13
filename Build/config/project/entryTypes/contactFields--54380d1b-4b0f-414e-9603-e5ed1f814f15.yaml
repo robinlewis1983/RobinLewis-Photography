@@ -1,0 +1,147 @@
+color: null
+fieldLayouts:
+  24502952-5daf-49a2-a0a4-57ff47a7fb9e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-01-11T16:37:50+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 1a2c997e-cd3c-4ca4-b0cc-6a5ecd22ea9d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-11T16:54:02+00:00'
+            elementCondition: null
+            fieldUid: 71c7dcde-5d2c-4f5d-8c11-d0c3f39d2d90 # Plain Text
+            handle: contactTitle
+            includeInCards: false
+            instructions: null
+            label: 'Contact Title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f49286f8-bf67-4a13-bda9-e7213ea4f212
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-11T16:42:41+00:00'
+            elementCondition: null
+            fieldUid: f0265ab0-0f4f-4606-81fb-fb039a85dc7f # Image
+            handle: contactImage
+            includeInCards: false
+            instructions: null
+            label: 'Contact Image'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3b6fb97b-7e1a-4e0e-9df0-4dd380abb5d9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-11T16:42:41+00:00'
+            elementCondition: null
+            fieldUid: 71c7dcde-5d2c-4f5d-8c11-d0c3f39d2d90 # Plain Text
+            handle: ContactBlurb
+            includeInCards: false
+            instructions: null
+            label: 'Contact Blurb'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 99e00690-6110-4e09-9df6-48d1e3055975
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-11T16:42:41+00:00'
+            elementCondition: null
+            fieldUid: 21fa5440-e495-4f1c-a78e-b79289a66872 # Phone Number
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56eb97f3-10fb-43f0-b96a-3f81a937df97
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-11T16:42:41+00:00'
+            elementCondition: null
+            fieldUid: dc4396a8-332a-4f3e-958e-1bde371bf7f5 # Email
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 655dbed3-7f2f-44d6-8246-ab4d0d4a0a61
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-11T16:42:41+00:00'
+            elementCondition: null
+            fieldUid: b0595521-507d-4100-a0e8-9ba3435a5414 # Socials Matrix
+            handle: contactSocials
+            includeInCards: false
+            instructions: null
+            label: 'Contact Solcials'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c3566160-a795-4cc7-9c8a-3b47e0bd32fd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6030661b-cbcb-4a01-a96e-9b01c49da537
+        userCondition: null
+handle: contactFields
+hasTitleField: true
+icon: null
+name: 'Contact Fields'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

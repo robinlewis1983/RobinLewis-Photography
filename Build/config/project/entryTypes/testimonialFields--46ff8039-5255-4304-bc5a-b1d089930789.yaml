@@ -1,0 +1,181 @@
+color: null
+fieldLayouts:
+  3b9a4962-8173-4ed1-a038-6aa09c2df6ba:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-01-11T16:44:53+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b7c3e17e-0bfd-4b15-bdab-6c42adba27c4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-11T16:55:32+00:00'
+            elementCondition: null
+            fieldUid: 71c7dcde-5d2c-4f5d-8c11-d0c3f39d2d90 # Plain Text
+            handle: testimonialPageTitle
+            includeInCards: false
+            instructions: null
+            label: 'Testimonial  Page Title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 08bc0547-2f7c-47bc-8f9b-0eadaf92c234
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Page title'
+        uid: 783286f1-0657-4df7-aba3-cb92d722b0a5
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-12T11:12:34+00:00'
+            elementCondition: null
+            fieldUid: 71c7dcde-5d2c-4f5d-8c11-d0c3f39d2d90 # Plain Text
+            handle: clientName1
+            includeInCards: false
+            instructions: null
+            label: 'Client Name 1'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b0ba9520-3c6d-4834-9540-b51ee6719317
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-11T16:49:15+00:00'
+            elementCondition: null
+            fieldUid: 71c7dcde-5d2c-4f5d-8c11-d0c3f39d2d90 # Plain Text
+            handle: testimonial1
+            includeInCards: false
+            instructions: null
+            label: 'Testimonial 1'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e2ef0785-3358-4b72-b9f2-0d9398113564
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Testimonial 1'
+        uid: fba250e5-4195-4613-b226-7ab7e04c0dc6
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-12T11:12:34+00:00'
+            elementCondition: null
+            fieldUid: 71c7dcde-5d2c-4f5d-8c11-d0c3f39d2d90 # Plain Text
+            handle: clientName2
+            includeInCards: false
+            instructions: null
+            label: 'Client Name 2'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2c08f451-8f5a-4662-8500-0af94c89c7c3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-11T16:49:15+00:00'
+            elementCondition: null
+            fieldUid: 71c7dcde-5d2c-4f5d-8c11-d0c3f39d2d90 # Plain Text
+            handle: testimonial2
+            includeInCards: false
+            instructions: null
+            label: 'Testimonial 2'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cacbe6f0-9be8-4656-9f31-e62f922fe89c
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Testimonial 2'
+        uid: 947d3db6-a0a6-4e2d-acb5-33c9dc4511bc
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-12T11:12:34+00:00'
+            elementCondition: null
+            fieldUid: 71c7dcde-5d2c-4f5d-8c11-d0c3f39d2d90 # Plain Text
+            handle: ClientName3
+            includeInCards: false
+            instructions: null
+            label: 'Client Name 3'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3e107338-328b-476d-8ebc-d9108c4a9000
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-11T16:49:15+00:00'
+            elementCondition: null
+            fieldUid: 71c7dcde-5d2c-4f5d-8c11-d0c3f39d2d90 # Plain Text
+            handle: testimonial3
+            includeInCards: false
+            instructions: null
+            label: 'Testimonial 3'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9cb26255-3d6e-4a7b-ad43-21907952c79a
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Testimonial 3'
+        uid: b32e5a8e-ede9-4773-8a63-65b1dea392f2
+        userCondition: null
+handle: testimonialFields
+hasTitleField: true
+icon: null
+name: 'Testimonial Fields'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

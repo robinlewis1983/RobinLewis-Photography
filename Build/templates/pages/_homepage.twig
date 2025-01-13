@@ -1,0 +1,134 @@
+{% extends '_layout' %}
+
+
+
+{% block content %}
+
+{% set homepageQuery = entry.homepageMatrix.all () %}
+
+<section class="coverPhoto top-div-global">
+
+    {% for coverImageQuery in homepageQuery %}
+
+     
+        {% if loop.index == 1 %}       {# Looks at only the first block in the loop #}
+
+        {% set imageQuery = coverImageQuery.coverImage.one() %}
+            <a href="./" ><img src="{{ imageQuery.getUrl() }}" alt="{{ imageQuery.alt ?? 'Default alt text' }}"></a>
+        {% endif %}
+
+    {% endfor %}
+
+</section>
+
+
+{# ------- About Section --------- #}
+
+<section id="about">
+
+{% for aboutBlockPrint in homepageQuery %}
+    {% if loop.index == 2 %}
+
+    {% include 'includes/cp.mediablock.twig' with {
+
+        mediahHeader: aboutBlockPrint.aboutTitle,
+        mediaContentQoute: aboutBlockPrint.aboutBlurb,
+        mediaContentImg: aboutBlockPrint.aboutImage,
+    }
+
+    %}
+
+    {% endif %}
+
+{% endfor %}
+
+</section>
+
+{# ------- Profile showcase Section --------- #}
+
+<section class="">
+
+
+
+{% for linkImagesBlockPrint in homepageQuery %}
+    {% if loop.index == 3 %}
+
+    {% include 'includes/cp.threeGridBlock.twig' with {
+
+        gridTitle1: linkImagesBlockPrint.linkTitle1,
+        gridImage1: linkImagesBlockPrint.backgroundImage1,
+        gridLink1:  linkImagesBlockPrint.pageLink1,
+
+        gridTitle2: linkImagesBlockPrint.linkTitle2,
+        gridImage2: linkImagesBlockPrint.backgroundImage2,
+        gridLink2:  linkImagesBlockPrint.pageLink2,
+
+        gridTitle3: linkImagesBlockPrint.linkTitle3,
+        gridImage3: linkImagesBlockPrint.backgroundImage3,
+        gridLink3:  linkImagesBlockPrint.pageLink3,
+  
+    }
+
+    %}
+
+    {% endif %}
+
+{% endfor %}
+
+
+
+</section>
+
+{# ------- Testimonials Section --------- #}
+
+<section id="testimonials" class="qouteSection">
+
+{% for testimonialBlockPrint in homepageQuery %}
+    {% if loop.index == 4 %}
+
+    {% include 'includes/cp.qouteBlock.twig' with {
+               
+                qouteBlockTilte:testimonialBlockPrint.testimonialPageTitle,
+                qouteText1:testimonialBlockPrint.testimonial1,
+                qouteText2:testimonialBlockPrint.testimonial2,
+                qouteText3:testimonialBlockPrint.testimonial3,
+                clientName1:testimonialBlockPrint.clientName1,
+                clientName2:testimonialBlockPrint.clientName2,
+                clientName3:testimonialBlockPrint.ClientName3,
+    }
+
+    %}
+
+    {% endif %}
+
+
+{% endfor %}
+
+</section>
+
+{# ------- Contact Section --------- #}
+
+<section id="contact">
+
+{% for contactBlockPrint in homepageQuery %}
+    {% if loop.index == 5 %}
+
+    {% include 'includes/cp.mediablock.twig' with {
+        
+        mediahHeader: contactBlockPrint.contactTitle,
+        mediaContentQoute: contactBlockPrint.ContactBlurb,
+        mediaContentImg: contactBlockPrint.contactImage,
+        mediaEmail: contactBlockPrint.email,
+
+    }
+
+    %}
+
+    {% endif %}
+
+{% endfor %}
+
+</contact>
+
+
+{% endblock %}

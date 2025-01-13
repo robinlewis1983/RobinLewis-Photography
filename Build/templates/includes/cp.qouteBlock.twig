@@ -1,0 +1,41 @@
+
+{% set qouteBlockTilte = qouteBlockTilte ?? null %}
+{% set qouteText1 = qouteText1 ?? null %}
+{% set qouteText2 = qouteText2 ?? null %}
+{% set qouteText3 = qouteText3 ?? null %}
+
+{% set clientName1 = clientName1 ?? null %}
+{% set clientName2 = clientName2 ?? null %}
+{% set clientName3 = clientName3 ?? null %}
+
+
+
+    <div class="qouteGrid">
+
+      <h1 class="qouteTitle underLine"> {{qouteBlockTilte | title }} </h1>
+
+            <div class="qoute-1 qoutePadding">
+                <div class="underLine">
+                    <h2>{{clientName1}}</h2>
+                    <q>{{qouteText1}}</q>
+                </div>
+            </div>
+       
+   
+            <div class="qoute-2 qoutePadding">
+                <div class="underLine">
+                    <h2>{{clientName2}}</h2>
+                    <q>{{qouteText2}}</q>
+                </div>    
+            </div>
+      
+
+            <div class="qoute-3 qoutePadding">
+                <div class="underLine">
+                    <h2>{{clientName3}}</h2>
+                    <q>{{qouteText3}}</q>
+                 </div>   
+            </div>
+   
+
+    </div>    

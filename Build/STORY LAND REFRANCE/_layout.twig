@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="{{ craft.app.language }}">
+
+    <head>
+
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3RYDPJJQC"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-L3RYDPJJQC');
+            </script>
+
+            <meta charset="UTF-8">
+
+            <title>
+            
+            {% if entry is defined and entry.title %}
+
+                {{ entry.title }} | Robin Lewis Offline Editor | Avid | Premiere Pro | Resolve
+
+            {% endif %}
+
+            </title>
+
+            <link href="./style.css" type="text/css" rel="stylesheet">
+
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        
+        {% do craft.app.view.registerCssFile('@web/styles.css') %}
+
+    </head>
+
+
+
+  <body>
+
+    <header class="header">
+
+        <div class="header-logo">
+
+        {% set navlogo = navigation.logo.one() %}
+    
+        <a href="./index.html" ><img src="{{ navlogo.getUrl() }}" alt="{{ navlogo.alt }}"></a>
+        
+        <h2 class="header-name"> {{ navigation.logoText }} </h2>
+        
+        </div>
+
+        <nav class="header-nav"> 
+            <ul>
+                <li class="header-nav-li"><a href="/" class="{{ craft.app.request.url == '/' ? 'active' : '' }}">Home</a></li>
+                <li class="header-nav-li"><a href="./about" class="{{ craft.app.request.url == '/about' ? 'active' : '' }}" >About</a></li>
+                <li class="header-nav-li"><a href="./testimonials"  class="{{ craft.app.request.url == '/testimonials' ? 'active' : '' }}" >Testimonials</a></li>
+                <li class="header-nav-li"><a href="./contact" class="{{ craft.app.request.url == '/contact' ? 'active' : '' }}" >Contact </a></li>
+                <li class="header-nav-btn"> {% include 'includes/cp.button.twig'%} </li>
+            </ul>
+        </nav>
+
+    </header>
+
+<main>
+
+    {% block content %}
+      {# fill with content blocks #}
+    {% endblock %}
+  </body>
+
+</main>
+
+<footer class="footer">
+
+
+    <div class="cv-reference-button"><!-- Download CV -->
+
+
+        <div> 
+
+           {% include 'includes/cp.button.twig'%} 
+
+        </div>     
+
+    </div><!-- /Download CV -->
+
+    <h3 class="footerblurb">{{ footerBlurb.footerText }}</h3>
+
+</footer>
+
+</html>

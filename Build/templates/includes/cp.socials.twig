@@ -1,0 +1,7 @@
+
+
+{% for socialQuery in craft.entries.section("socialLinks").all() %}
+
+               <a href="{{ socialQuery.socialsLink }}" target="_blank"> <img class="socialLogos" src="{{ socialQuery.socialLogo.one().getUrl() }}" alt="{{ socialQuery.socialLogo.one().alt ?? 'Default alt text' }}"> </a>
+
+{% endfor %}

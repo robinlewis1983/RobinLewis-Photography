@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 1817c8ed-6f31-4539-899c-acb78561c62e # Portfolio Entries
+handle: portraits
+maxAuthors: 1
+name: Portraits
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  e8822b3c-5261-418e-b270-6dd61620b23b: # robinlewisphotography
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/_portraits.twig
+    uriFormat: portraits
+type: single

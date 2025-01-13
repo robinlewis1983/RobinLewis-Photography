@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: portfolioImageMatrix
+instructions: null
+name: 'Portfolio Image Matrix'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    - f06d0398-1378-4de9-ab64-596d9640e1b8 # portfolio Image Fields
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

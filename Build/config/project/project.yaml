@@ -1,0 +1,111 @@
+dateModified: 1736781702
+elementSources:
+  craft\elements\Entry:
+    -
+      heading: Pages
+      type: heading
+    -
+      defaultSort:
+        - title
+        - asc
+      defaultViewMode: cards
+      disabled: false
+      key: singles
+      tableAttributes:
+        - status
+        - link
+      type: native
+    -
+      heading: Globals
+      type: heading
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:51ccce31-a001-472a-b89d-bdbcae7e2ae2'
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: 'section:403f1f6c-5921-4a3c-9094-ed17a297b70d' # Global Logo
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: structure
+      disabled: false
+      key: 'section:c53d45ab-75ea-437b-a618-61e511f64fa1' # Social Links
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      heading: 'Everything Else'
+      type: heading
+    -
+      key: '*'
+      type: native
+email:
+  fromEmail: contact@robinlewisphotography.co.uk
+  fromName: robinlewisphotography
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  hardDisk:
+    hasUrls: true
+    name: 'Hard Disk'
+    settings:
+      path: '@webroot/uploads'
+    type: craft\fs\Local
+    url: '@uploads'
+meta:
+  __names__:
+    0f4a048d-e915-4261-b260-f98812d5fb01: 'Image and Link Fields' # Image and Link Fields
+    21fa5440-e495-4f1c-a78e-b79289a66872: 'Phone Number' # Phone Number
+    22f98ad0-da64-4418-a69c-4ecd5ba6c1db: 'Social Link Fields' # Social Link Fields
+    27edeb8b-b368-465d-9017-a3be89de9475: 'Hompage Matrix' # Hompage Matrix
+    34a7da35-3197-44f1-85f1-eb177455a6be: Homepage # Homepage
+    46ff8039-5255-4304-bc5a-b1d089930789: 'Testimonial Fields' # Testimonial Fields
+    71c7dcde-5d2c-4f5d-8c11-d0c3f39d2d90: 'Plain Text' # Plain Text
+    89d33f72-fcf9-4473-bbc6-ec6df06d01f1: 'Image Orientation' # Image Orientation
+    403f1f6c-5921-4a3c-9094-ed17a297b70d: 'Global Logo' # Global Logo
+    967cdc9e-1b47-4ed5-8b0f-d856830cb6ec: 'Cover Image Field' # Cover Image Field
+    1817c8ed-6f31-4539-899c-acb78561c62e: 'Portfolio Entries' # Portfolio Entries
+    3224c030-906f-4fa7-a439-7a2bbff1c5e8: 'Image Entry' # Image Entry
+    46868f8d-e176-4440-a5c0-174dea2e8620: 'About Fields' # About Fields
+    54380d1b-4b0f-414e-9603-e5ed1f814f15: 'Contact Fields' # Contact Fields
+    a7b6eed5-5b9f-49a8-94d2-3afe027dc912: 'Image and Link Matrix' # Image and Link Matrix
+    b0595521-507d-4100-a0e8-9ba3435a5414: 'Socials Matrix' # Socials Matrix
+    b7314d5c-2fac-4a88-8202-9aa7264d94d1: 'Public Schema' # Public Schema
+    c6a293d1-b272-4b4d-b7f8-e0cf2cf97e1e: 'Page Link 3' # Page Link 3
+    c48f8a07-3378-4e89-9425-a50ee6db2d03: 'Portfolio Image Matrix' # Portfolio Image Matrix
+    c53d45ab-75ea-437b-a618-61e511f64fa1: 'Social Links' # Social Links
+    d0ba20c4-e65c-4b8d-a368-0921241d1850: 'Homepage Entries' # Homepage Entries
+    d0c2f052-7110-43de-b280-48835e09c45c: robinlewisphotography # robinlewisphotography
+    d04ca8a1-d0a2-4b01-baa5-79388eec9e70: Portraits # Portraits
+    dc4396a8-332a-4f3e-958e-1bde371bf7f5: Email # Email
+    e51ef6cb-7c10-43af-ac61-16a92f98fc7a: 'Social Link Entries' # Social Link Entries
+    e8822b3c-5261-418e-b270-6dd61620b23b: robinlewisphotography # robinlewisphotography
+    f0265ab0-0f4f-4606-81fb-fb039a85dc7f: Image # Image
+    f06d0398-1378-4de9-ab64-596d9640e1b8: 'portfolio Image Fields' # portfolio Image Fields
+    f31ae68e-05a6-46b8-8f95-461ac5246bb2: Images # Images
+system:
+  edition: solo
+  live: true
+  name: robinlewisphotography
+  schemaVersion: 5.5.0.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: imageOrientation
+instructions: null
+name: 'Image Orientation'
+searchable: false
+settings:
+  default: false
+  offLabel: Vertical
+  onLabel: Horizontal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

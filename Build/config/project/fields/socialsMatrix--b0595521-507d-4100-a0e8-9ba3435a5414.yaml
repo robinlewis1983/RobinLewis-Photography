@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: socialsMatrix
+instructions: null
+name: 'Socials Matrix'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    - 22f98ad0-da64-4418-a69c-4ecd5ba6c1db # Social Link Fields
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

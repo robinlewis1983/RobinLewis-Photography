@@ -1,0 +1,14 @@
+columnSuffix: null
+handle: email
+instructions: null
+name: Email
+searchable: false
+settings:
+  maxLength: 255
+  showLabelField: false
+  showTargetField: false
+  types:
+    - email
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Link

@@ -1,0 +1,17 @@
+  
+  {% set imageSelect = imageSelect ?? null %}
+  {% set imageOrientation = imageOrientation ?? null %}
+
+ 
+
+    {% if imageSelect | length %}
+    {% set img = imageSelect.one() %}
+     {% set Horizontal = imageOrientation %}
+      <img class="{% if Horizontal %}horozontalImage{% else %}verticalImage{% endif %}" src="{{ img.getUrl() }}" alt="{{  img.alt }}">
+    {% endif %}
+     
+
+
+
+
+

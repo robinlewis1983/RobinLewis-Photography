@@ -1,0 +1,73 @@
+
+{% set mediaHeader = mediahHeader ?? null %}
+
+{% set mediaSubHeader = mediaSubHeader ?? null %}
+
+{% set mediaCompanyName = mediaCompanyName ?? null %}
+
+{% set mediaContentQoute = mediaContentQoute ?? null %}
+
+{% set mediaContentText = mediaContentText ?? null %}
+
+{% set mediaContentImg = mediaContentImg ?? null %}
+
+{% set mediaEmail = mediaEmail ?? null %}
+
+{% set mediaPhoneNumber = mediaPhoneNumber ?? null %}
+
+
+
+
+{# <div class="media-text {% if loop.index is odd %} media-block--flip {% endif %}">  #}
+
+<div class="media-block {% if customClass is defined %}{{ customClass }}{% elseif loop.index is odd %}media-block--flip{% endif %}">
+
+    {% if mediaContentImg | length %}
+        <div class="media-block__img">
+            {% set imageQuery = mediaContentImg.one() %}
+            <img class="media-block__img" src="{{ imageQuery.getUrl() }}" alt="{{ imageQuery.alt ?? 'Default alt text' }}" >
+        </div><!--/media-block__img-->
+    {% endif %}
+
+    <div class="media-block__blurb white-text">
+
+            {% if mediaHeader | length %} 
+                <h2 class="underLine"> {{ mediaHeader |title }} </h2>
+            {% endif %}
+
+            {% if mediaSubHeader | length %} 
+                <h3> {{ mediaSubHeader }}</h3>
+            {% endif %}
+
+            {% if mediaCompanyName | length %} 
+                <h3> {{ mediaCompanyName }}</h3>
+            {% endif %}
+
+        <p>
+            {% if mediaContentQoute | length %}
+                <p> {{ mediaContentQoute }}</p> 
+            {% endif %}
+
+             {% if mediaContentText | length %}
+                 {{ mediaContentText }} 
+            {% endif %}
+        </p>
+
+        <p>
+
+            {% if mediaEmail | length %}
+                Email: <a href="mailto: {{ mediaEmail }}?subject=New Client Email">{{ mediaEmail | replace('mailto:','') }}</a>
+            {% endif %}
+
+              
+        </p>
+
+        <p>
+           {% if mediaPhoneNumber | length %}
+              Phone: {{ mediaPhoneNumber | replace('tel:','')}} 
+           {% endif %}
+        </p>
+
+    </div>   <!--/media-text__blurb-->
+ 
+ </div> 

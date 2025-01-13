@@ -1,0 +1,25 @@
+{% extends '_layout' %}
+
+
+
+{% block content %}
+
+{% set portfolioImages = entry.portfolioImage.all() %}
+
+
+
+
+  <div class="image-grid">
+    
+    {% for image in portfolioImages %}
+      <img src="{{ image.getUrl() }}" alt="{{ image.alt }}">
+    {% endfor %}
+     
+  </div>
+
+
+
+
+{% endblock %}
+
+

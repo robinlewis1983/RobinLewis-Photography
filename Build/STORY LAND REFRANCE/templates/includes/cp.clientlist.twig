@@ -1,0 +1,19 @@
+  <div class="client-list-div"><!--Client list-->
+
+            <h2 class="client-logos-title">Clients</h2>
+           
+           
+    
+            <ul class="client-list">
+
+              {% for entry in craft.entries.section("clientImages").all() %}
+
+                  <li class="Client-img"><img src="{{ entry.image.one().getUrl() }}" alt="{{ entry.image.one().alt ?? 'Default alt text' }}"></li> 
+
+              {% endfor %}
+
+            </ul>
+
+           
+
+   </div><!--/Client list-->

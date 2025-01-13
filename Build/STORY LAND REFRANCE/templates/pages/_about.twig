@@ -1,0 +1,26 @@
+{# Extend the layout template #}
+{% extends '_layout' %}
+
+{# Provide content to the `content` block #}
+{% block content %}
+  
+  {% set clientBlocks = entry.pageContent.all() %}
+
+  <div class="mediaTextDiv">
+
+  {% for clientBlockPrint in clientBlocks %}
+
+
+              {% include 'includes/cp.mediatext.twig' with {
+                  mediahHeader: clientBlockPrint.aboutHeader,
+                  mediaContentText: clientBlockPrint.about,
+                  mediaContentImg: clientBlockPrint.aboutImage,
+                  customClass: 'mediaText--OneModule',
+              } %}
+                
+  {% endfor %}
+
+  </div>
+
+{% endblock %}
+

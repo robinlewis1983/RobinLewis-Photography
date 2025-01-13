@@ -1,0 +1,83 @@
+color: null
+fieldLayouts:
+  61d777c2-71c0-4367-b9a7-ac3d0933d2fe:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-01-10T17:25:40+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 0d062e7e-a8b8-4169-99b6-435a70225b7e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-13T09:42:27+00:00'
+            elementCondition: null
+            fieldUid: f0265ab0-0f4f-4606-81fb-fb039a85dc7f # Image
+            handle: SocialLinkImage
+            includeInCards: false
+            instructions: null
+            label: 'Social Link Image'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 364754c8-758b-40be-bd8f-34012f5d0123
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-10T17:27:19+00:00'
+            elementCondition: null
+            fieldUid: c6a293d1-b272-4b4d-b7f8-e0cf2cf97e1e # Page Link 3
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6e2d38ff-062c-4bd0-8bdb-0bab33d854bd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: eeb99bca-43bc-4ebd-8d18-b32065aead0d
+        userCondition: null
+handle: socialLinksFields
+hasTitleField: true
+icon: null
+name: 'Social Link Fields'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

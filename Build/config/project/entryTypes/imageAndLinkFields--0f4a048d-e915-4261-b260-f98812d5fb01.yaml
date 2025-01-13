@@ -1,0 +1,207 @@
+color: null
+fieldLayouts:
+  35c5fc2b-13d7-4646-82fa-9a2eaccf658d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-01-12T11:02:13+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a40a3a95-2c73-4479-b578-98d4ce38f037
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-12T11:05:59+00:00'
+            elementCondition: null
+            fieldUid: 71c7dcde-5d2c-4f5d-8c11-d0c3f39d2d90 # Plain Text
+            handle: linkTitle1
+            includeInCards: false
+            instructions: null
+            label: 'Link Title 1'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9767a646-e2cc-4506-b42c-726efb0f7149
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-12T11:05:59+00:00'
+            elementCondition: null
+            fieldUid: c6a293d1-b272-4b4d-b7f8-e0cf2cf97e1e # Page Link 3
+            handle: pageLink1
+            includeInCards: false
+            instructions: null
+            label: 'Page Link 1'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 721de0aa-4839-46b8-9868-3a9e833765d2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-12T11:05:59+00:00'
+            elementCondition: null
+            fieldUid: f0265ab0-0f4f-4606-81fb-fb039a85dc7f # Image
+            handle: backgroundImage1
+            includeInCards: false
+            instructions: null
+            label: 'Background Image 1'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 775f30af-60c4-4caa-94a9-27a789cb3749
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Section 1'
+        uid: 53150af6-1fe7-4aa2-ac65-ab0d5a6cb22b
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-12T11:16:25+00:00'
+            elementCondition: null
+            fieldUid: 71c7dcde-5d2c-4f5d-8c11-d0c3f39d2d90 # Plain Text
+            handle: linkTitle2
+            includeInCards: false
+            instructions: null
+            label: 'Link Title 2'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 782d55f2-d4bc-40bd-afa1-828e498cc9b1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-12T11:05:59+00:00'
+            elementCondition: null
+            fieldUid: c6a293d1-b272-4b4d-b7f8-e0cf2cf97e1e # Page Link 3
+            handle: pageLink2
+            includeInCards: false
+            instructions: null
+            label: 'Page Link 1'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 181f7ef5-3f68-46f5-b059-e842919e2a6a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-12T11:16:25+00:00'
+            elementCondition: null
+            fieldUid: f0265ab0-0f4f-4606-81fb-fb039a85dc7f # Image
+            handle: backgroundImage2
+            includeInCards: false
+            instructions: null
+            label: 'Background Image2'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9cbc23e8-04f8-44d4-9a79-2303f3f219fd
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Section 2'
+        uid: b249108a-19b5-4f9f-9025-51c826a51458
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-12T11:16:25+00:00'
+            elementCondition: null
+            fieldUid: 71c7dcde-5d2c-4f5d-8c11-d0c3f39d2d90 # Plain Text
+            handle: linkTitle3
+            includeInCards: false
+            instructions: null
+            label: 'Link Title 3'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5ad4f49f-f57b-4ce0-9966-7ae41bb230e2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-12T11:16:25+00:00'
+            elementCondition: null
+            fieldUid: c6a293d1-b272-4b4d-b7f8-e0cf2cf97e1e # Page Link 3
+            handle: iink2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f75450e2-05b9-45f8-b7e2-c68e5b0ee247
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-12T11:16:25+00:00'
+            elementCondition: null
+            fieldUid: f0265ab0-0f4f-4606-81fb-fb039a85dc7f # Image
+            handle: backgroundImage3
+            includeInCards: false
+            instructions: null
+            label: 'Background Image 3'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2175604e-5479-4dc4-a864-0310cdede265
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Section 3'
+        uid: dd27d63a-e74a-4fff-9884-b7209f58519e
+        userCondition: null
+handle: imageAndLinkFields
+hasTitleField: true
+icon: null
+name: 'Image and Link Fields'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

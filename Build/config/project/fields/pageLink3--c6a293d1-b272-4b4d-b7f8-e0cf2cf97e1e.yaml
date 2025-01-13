@@ -1,0 +1,35 @@
+columnSuffix: null
+handle: pageLink3
+instructions: 'Add link here'
+name: 'Page Link 3'
+searchable: false
+settings:
+  maxLength: 255
+  showLabelField: true
+  showTargetField: false
+  typeSettings:
+    __assoc__:
+      -
+        - entry
+        -
+          __assoc__:
+            -
+              - sources
+              -
+                - singles
+      -
+        - url
+        -
+          __assoc__:
+            -
+              - allowRootRelativeUrls
+              - ''
+            -
+              - allowAnchors
+              - ''
+  types:
+    - entry
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Link

@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - e51ef6cb-7c10-43af-ac61-16a92f98fc7a # Social Link Entries
+handle: socialLinks
+maxAuthors: 1
+name: 'Social Links'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  e8822b3c-5261-418e-b270-6dd61620b23b: # robinlewisphotography
+    enabledByDefault: true
+    hasUrls: true
+    template: social-links/_entry.twig
+    uriFormat: 'social-links/{slug}'
+structure:
+  maxLevels: null
+  uid: d8771845-ea49-49b8-bc02-48ae22da46aa
+type: structure

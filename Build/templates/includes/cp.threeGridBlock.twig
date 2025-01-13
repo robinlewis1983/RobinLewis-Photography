@@ -1,0 +1,87 @@
+
+
+{% set gridImage1 = gridImage1 ?? null %}
+{% set gridTitle1 = gridTitle1 ?? null %}
+{% set gridLink1 = gridLink1 ?? null %}
+
+{% set gridImage2 = gridImage2 ?? null %}
+{% set gridTitle2 = gridTitle2 ?? null %}
+{% set gridLink2 = gridLink2 ?? null %}
+
+{% set gridImage3 = gridImage3 ?? null %}
+{% set gridTitle3 = gridTitle3 ?? null %}
+{% set gridLink3 = gridLink3 ?? null %}
+
+
+    <div class="block-grid">
+
+    <div class="grid-block">
+
+            {% if gridImage1 | length %}
+                    <div class="gridImage">
+                        {% set imageQuery = gridImage1.one() %}
+                        <img src="{{ imageQuery.getUrl() }}" alt="{{ imageQuery.alt ?? 'Default alt text' }}" >
+                    </div>
+            {% endif %}
+
+            <div class="titleLink">
+
+            {% if gridTitle1 | length %} 
+                    <a href=" {{ gridLink1 }} " > <h1 class="underLineBig"> {{ gridTitle1 |upper }} </h1></a>
+            {% endif %}
+
+        </div>
+
+
+
+        </div>   {# ------ End block 1 ------ #}
+
+
+            <div class="grid-block">
+
+            {% if gridImage2 | length %}
+                    <div class="gridImage">
+                        {% set imageQuery = gridImage2.one() %}
+                        <img  src="{{ imageQuery.getUrl() }}" alt="{{ imageQuery.alt ?? 'Default alt text' }}" >
+                    </div>
+            {% endif %}
+
+            <div class="titleLink">
+
+            {% if gridTitle2 | length %} 
+                    <a href=" {{ gridLink2 }} "> <h1 class="underLineBig">{{ gridTitle2 |upper }}<h1></a>
+            {% endif %}
+
+        </div>
+
+
+
+        </div>   {# ------ End block 2 ------ #}
+
+
+            <div class="grid-block">
+
+            {% if gridImage3 | length %}
+                    <div class="gridImage">
+                        {% set imageQuery = gridImage3.one() %}
+                        <img  src="{{ imageQuery.getUrl() }}" alt="{{ imageQuery.alt ?? 'Default alt text' }}" >
+                    </div>
+            {% endif %}
+
+            <div class="titleLink">
+
+            {% if gridTitle3 | length %} 
+                <a href=" {{ gridLink3 }} "> <h1 class="underLineBig">{{ gridTitle3 |upper}}<h1></a>
+            {% endif %}
+
+        </div>
+
+
+
+    </div>   {# ------ End block 3 ------ #}
+
+  
+
+</div>
+
+

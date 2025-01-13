@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-GB
+name: robinlewisphotography
+primary: true
+siteGroup: d0c2f052-7110-43de-b280-48835e09c45c # robinlewisphotography
+sortOrder: 1

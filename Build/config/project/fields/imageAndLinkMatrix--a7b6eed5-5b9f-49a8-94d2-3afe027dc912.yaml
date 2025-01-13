@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: imageAndLinkMatrix
+instructions: null
+name: 'Image and Link Matrix'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    - 0f4a048d-e915-4261-b260-f98812d5fb01 # Image and Link Fields
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
