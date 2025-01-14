@@ -14,15 +14,28 @@
 
       <h1 class="qouteTitle underLine"> {{qouteBlockTilte | title }} </h1>
 
-            <div class="qoute-1 qoutePadding">
-                <div class="underLine">
-                    <h2>{{clientName1}}</h2>
-                    <q>{{qouteText1}}</q>
-                </div>
-            </div>
-       
-   
-            <div class="qoute-2 qoutePadding">
+                {% for i in 1..3 %}
+                    
+                     {% set clientName = attribute(_context, 'clientName' ~ i) %}
+                     {% set qouteText = attribute(_context, 'qouteText' ~ i) %}
+
+                    <div class=" qoute-{{ i }}  qoutePadding">
+                        <div class="underLine">
+                            <h2>{{clientName}}</h2>
+                            <q>{{qouteText}}</q>
+                        </div>
+                    </div>
+
+
+                {% endfor %}
+    </div>   
+
+
+
+
+
+
+            {# <div class="qoute-2 qoutePadding">
                 <div class="underLine">
                     <h2>{{clientName2}}</h2>
                     <q>{{qouteText2}}</q>
@@ -35,7 +48,7 @@
                     <h2>{{clientName3}}</h2>
                     <q>{{qouteText3}}</q>
                  </div>   
-            </div>
+            </div> #}
    
 
-    </div>    
+    {# </div>     #}

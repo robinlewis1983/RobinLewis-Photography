@@ -2,16 +2,19 @@
   {% set imageSelect = imageSelect ?? null %}
   {% set imageOrientation = imageOrientation ?? null %}
 
- 
 
-    {% if imageSelect | length %}
+
+ {% if imageSelect | length %}
     {% set img = imageSelect.one() %}
+
+        {# This is collecting the focal point infomation from Craft and outputting it as a style on the <IMG> #}
+         {% if img.hasFocalPoint %} 
+              {% set x = img.focalPoint | first * 100 ~ '%' %}
+              {% set y = img.focalPoint | last * 100 ~ '%' %}
+              {% set imgStyles = ' object-position: ' ~ [x, y]|join(' ') %}
+         {% endif %}
+
      {% set Horizontal = imageOrientation %}
-      <img class="{% if Horizontal %}horozontalImage{% else %}verticalImage{% endif %}" src="{{ img.getUrl() }}" alt="{{  img.alt }}">
-    {% endif %}
-     
-
-
-
-
+      <img class="{% if Horizontal %}horozontalImage{% else %}verticalImage{% endif %}" style="{{ imgStyles is defined ? imgStyles }}" src="{{ img.getUrl() }}" alt="{{  img.alt }}">
+{% endif %}
 

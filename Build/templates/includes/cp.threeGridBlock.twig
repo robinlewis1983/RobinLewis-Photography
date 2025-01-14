@@ -13,75 +13,41 @@
 {% set gridLink3 = gridLink3 ?? null %}
 
 
+
+
     <div class="block-grid">
 
-        
-
-        <div class="grid-block">
-
-            {% if gridImage1 | length %}
-                    {# <div class="gridImage" style="object-position: {{posHorizontal posVertical}};"> #}
-                        {% set imageQuery = gridImage1.one() %}
-                        <img src="{{ imageQuery.getUrl({width:1920}) }}" alt="{{ imageQuery.alt ?? 'Default alt text' }}" >
-                    {# </div> #}
-            {% endif %}
-
-            <div class="titleLink">
-
-            {% if gridTitle1 | length %} 
-                    <a href=" {{ gridLink1 }} " > <h1 class="underLineBig"> {{ gridTitle1 |upper }} </h1></a>
-            {% endif %}
-
-        </div>
-
-
-
-        </div>   {# ------ End block 1 ------ #}
-
-
+        {% for i in 1..3 %}  {#  This for is to add a 1,2 or 3 to the below variables so YOu dont need to do the code 3 times. #}
             <div class="grid-block">
+                {% set gridImage = attribute(_context, 'gridImage' ~ i) %}
+                {% set gridLink = attribute(_context, 'gridLink' ~ i) %}
+                {% set gridTitle = attribute(_context, 'gridTitle' ~ i) %}
 
-            {% if gridImage2 | length %}
-                    {# <div class="gridImage"> #}
-                        {% set imageQuery = gridImage2.one() %}
-                        <img  src="{{ imageQuery.getUrl() }}" alt="{{ imageQuery.alt ?? 'Default alt text' }}" >
-                    {# </div> #}
-            {% endif %}
+                {% if gridImage | length %}
+                            {% set imageQuery = gridImage.one() %}
 
-            <div class="titleLink">
-
-            {% if gridTitle2 | length %} 
-                    <a href=" {{ gridLink2 }} "> <h1 class="underLineBig">{{ gridTitle2 |upper }}<h1></a>
-            {% endif %}
-
-        </div>
+                             {% if imageQuery.hasFocalPoint %} 
+                                {% set x = imageQuery.focalPoint | first * 100 ~ '%' %}
+                                {% set y = imageQuery.focalPoint | last * 100 ~ '%' %}
+                                {% set imgStyles = ' object-position: ' ~ [x, y]|join(' ') %}
+                            {% endif %}
 
 
+                            <img style="{{ imgStyles is defined ? imgStyles }}" src="{{ imageQuery.getUrl({width:1920}) }}" alt="{{ imageQuery.alt ?? 'Default alt text' }}" >
+                
+                {% endif %}
 
-        </div>   {# ------ End block 2 ------ #}
+                <div class="titleLink">
 
+                {% if gridTitle | length %} 
+                        <a href=" {{ gridLink }} " > <h1 class="underLineBig"> {{ gridTitle |upper }} </h1></a>
+                {% endif %}
 
-            <div class="grid-block">
+                </div>
+            </div>
+        {% endfor %}
 
-            {% if gridImage3 | length %}
-                    {# <div class="gridImage"> #}
-                        {% set imageQuery = gridImage3.one() %}
-                        <img  src="{{ imageQuery.getUrl() }}" alt="{{ imageQuery.alt ?? 'Default alt text' }}" >
-                    {# </div> #}
-            {% endif %}
-
-            <div class="titleLink">
-
-            {% if gridTitle3 | length %} 
-                <a href=" {{ gridLink3 }} "> <h1 class="underLineBig">{{ gridTitle3 |upper}}<h1></a>
-            {% endif %}
-
-        </div>
-
-
-
-    </div>   {# ------ End block 3 ------ #}
-
+       
   
 
 </div>
