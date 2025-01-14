@@ -397,6 +397,7 @@ a {
   
 
       .qouteGrid h1{
+        font-size: 2em;
           font-weight: lighter;
       }
     
@@ -417,6 +418,7 @@ a {
      
       grid-row: 1;
       align-self: center;
+      padding-top: 50px;
      }
 
      .qoutePadding {
@@ -440,6 +442,7 @@ a {
 
       align-self: center; 
       grid-row: 4;
+      padding-bottom: 50px;
      }
      
 
@@ -456,7 +459,7 @@ a {
        .qouteTitle{
         grid-column: 2; 
         grid-row: 1;
-        padding-top: 50px;
+      
 
   
        }
@@ -608,6 +611,7 @@ a {
   display: inline-block;
   text-align: center;
   width: fit-content;
+  font-size: 2em;
   font-weight: lighter;
   margin: 0 auto 10px auto;
 }
@@ -680,31 +684,3 @@ a {
 
 
 
-
-
-/* Mobile view (max-width: 768px) */
-/* @media only screen and (max-width: 768px) {
-
-  .media-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    height: auto; 
-  }
-
-  .media-block__blurb {
-    order: 1; 
-    width: 100%; 
-    text-align: center; 
-    padding: 50px 20px;
-  }
-
-  .media-block__img {
-    order: 2;
-    width: 100%;
-  }
-
-  .media-block__img img {
-    position: static; 
-  }
-} */
