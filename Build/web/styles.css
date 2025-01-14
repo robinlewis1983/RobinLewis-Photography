@@ -383,27 +383,22 @@ a {
     }
 
      .qouteGrid{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 70px 1fr 1fr 1fr ;
       height: auto;
       font-family:'lato';
       text-align: center;
-      justify-items: center;
-      align-items: center;
-      
+      justify-items: center;   
      }
 
   
 
       .qouteGrid h1{
         font-size: 2em;
-          font-weight: lighter;
+        font-weight: lighter;
       }
     
       .qouteGrid h2{
-      padding: 10px;
-      font-weight:lighter;
+       padding: 10px;
+       font-weight:lighter;
       }
 
       .qouteGrid q{
@@ -450,18 +445,17 @@ a {
 
 
       .qouteGrid{
+        display: grid;
         grid-template-columns: repeat( 3, 1fr);
         grid-template-rows: 70px 1fr 1fr ;
         margin: 0px 100px ;
+        align-items: center;
        }
 
        
        .qouteTitle{
         grid-column: 2; 
         grid-row: 1;
-      
-
-  
        }
 
        .qoute-1{
