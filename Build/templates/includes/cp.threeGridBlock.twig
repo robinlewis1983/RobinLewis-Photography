@@ -32,7 +32,6 @@
                                 {% set imgStyles = ' object-position: ' ~ [x, y]|join(' ') %}
                             {% endif %}
 
-
                             <img style="{{ imgStyles is defined ? imgStyles }}" src="{{ imageQuery.getUrl({width:1920}) }}" alt="{{ imageQuery.alt ?? 'Default alt text' }}" >
                 
                 {% endif %}

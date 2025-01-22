@@ -14,7 +14,7 @@
 
       <h1 class="qouteTitle underLine"> {{qouteBlockTilte | title }} </h1>
 
-                {% for i in 1..3 %}
+                {% for i in 1..3 %} {#  This for is to add a 1,2 or 3 to the below variables so YOu dont need to do the code 3 times. #}
                     
                      {% set clientName = attribute(_context, 'clientName' ~ i) %}
                      {% set qouteText = attribute(_context, 'qouteText' ~ i) %}
@@ -29,26 +29,3 @@
 
                 {% endfor %}
     </div>   
-
-
-
-
-
-
-            {# <div class="qoute-2 qoutePadding">
-                <div class="underLine">
-                    <h2>{{clientName2}}</h2>
-                    <q>{{qouteText2}}</q>
-                </div>    
-            </div>
-      
-
-            <div class="qoute-3 qoutePadding">
-                <div class="underLine">
-                    <h2>{{clientName3}}</h2>
-                    <q>{{qouteText3}}</q>
-                 </div>   
-            </div> #}
-   
-
-    {# </div>     #}

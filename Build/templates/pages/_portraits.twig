@@ -1,7 +1,15 @@
 {% extends '_layout' %}
 
 {% block content %}
-
+  <nav class="header-secondary-nav">
+        <ul>
+            <li class="header-secondary-nav-li"><a href="./portraits">Portrait</a></li>
+            |
+            <li class="header-secondary-nav-li"><a href="./">Family</a></li>
+            |
+            <li class="header-secondary-nav-li"><a href="./b">Branding</a></li>
+        </ul>
+    </nav>
   <div class="image-grid top-div-global">
 
     {% set portfolioImageQuery = entry.portfolioImageMatrix.all() %}

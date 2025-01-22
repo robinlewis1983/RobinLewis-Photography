@@ -38,7 +38,7 @@
 
 
 :root {
-  scroll-padding-top: 25%; /* Offset scroll position by 25% of the viewport height */
+  scroll-padding-top: 15%; /* Offset scroll position by 25% of the viewport height */
 }
 
 
@@ -49,10 +49,6 @@ html {
 
 /*-------- Global Styling ----------*/
 
-.top-div-global {
-
-  padding-top: 190px;
-}
 
 .underLine {
   position: relative; /* Required for positioning the pseudo-element */
@@ -97,11 +93,11 @@ a {
     width: 100%;
     height: auto;
     opacity: 80%;
-    position: fixed;
     top: 0;
     background-color: #ffffff;
     border: 1px solid #ffffff;
     z-index: 999;
+    position: sticky;
 
   }
 
@@ -116,7 +112,7 @@ a {
   padding-bottom: 10px;
   padding-top: 25px;
   }
-
+ 
 
 
   /* Nav bar */
@@ -216,16 +212,12 @@ a {
   @media screen and (min-width: 1024px) {
 
 
-    .top-div-global {
-      padding-top: 200px;
-    }
-
     .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      height: 200px;
+      /* height: 200px; */
       padding: 0px 100px;
       overflow: hidden;
     }
