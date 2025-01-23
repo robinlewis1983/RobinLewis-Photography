@@ -1,0 +1,16 @@
+
+<nav class="nav"> 
+    <ul>
+        <li class="nav-li"><a href="/" class="{{ craft.app.request.url == '/' ? 'active' : '' }}">Home</a></li>
+        <li class="nav-li"> <a href="#about" class="{{ craft.app.request.url == '/about' ? 'active' : '' }}">About</a></li>
+            <li class="nav-li"><a href="/">Galleries</a>
+                {# <ul class="dropdown-menu">
+                    <li><a href="/portraits">Portrait</a></li>
+                    <li><a href="/family">Family</a></li>
+                    <li><a href="/branding">Branding</a></li>
+                </ul> #}
+            </li>
+        <li class="nav-li"><a href="#testimonials" class="{{ craft.app.request.url == '/testimonials' ? 'active' : '' }}">Testimonials</a></li>
+        <li class="nav-li"><a href="#contact" class="{{ craft.app.request.url == '/contact' ? 'active' : '' }}">Contact</a></li>
+    </ul>
+</nav>

@@ -6,15 +6,11 @@
 
 {% set homepageQuery = entry.homepageMatrix.all () %}
 
-<nav class="header-secondary-nav">
-        <ul>
-            <li class="header-secondary-nav-li"><a href="./portraits">Portrait</a></li>
-            |
-            <li class="header-secondary-nav-li"><a href="./">Family</a></li>
-            |
-            <li class="header-secondary-nav-li"><a href="./b">Branding</a></li>
-        </ul>
-    </nav>
+{# -----Secondary nav------ #}
+
+  {% include 'includes/cp.secondaryNav.twig'%}
+
+{# -----/Secondary nav------ #}  
 
 <section class="coverPhoto top-div-global">
 

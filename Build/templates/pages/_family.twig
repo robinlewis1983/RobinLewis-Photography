@@ -1,0 +1,55 @@
+{% extends '_layout' %}
+
+{% block content %}
+{# -----Secondary nav------ #}
+
+  {% include 'includes/cp.secondaryNav.twig'%}
+
+{# -----/Secondary nav------ #}  
+
+  <div class="image-grid top-div-global">
+
+    {% set portfolioImageQuery = entry.portfolioImageMatrix.all() %}
+
+        {% for portfolioImagePrint in portfolioImageQuery %}
+
+        {% include 'includes/cp.ImageCollageGrid.twig' with { 
+          
+          imageSelect: portfolioImagePrint.image,
+          imageOrientation: portfolioImagePrint.imageOrientation, 
+          galleryTitle: portfolioImagePrint.galleryTextTitle,
+          galleryBlurb: portfolioImagePrint.galleryText,}%}
+
+        {% endfor %}
+  </div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{# 
+{% block content %}
+
+{% set portfolioImages = entry.portfolioImageMatrix.all() %}
+    <div class="image-grid">
+    
+    {% for portfolioImage in portfolioImages %}
+     {% set Horizontal = portfolioImage.imageOrientation %}
+      <img class="{% if Horizontal %}image-grid-row-2 image-grid-cols-4{% else %}image-grid-row-2 image-grid-cols-2{% endif %}" src="{{ portfolioImage.image.one().getUrl() }}" alt="{{  portfolioImage.image.alt }}">
+    {% endfor %}
+     
+  </div>
+
+  {% endblock %} #}

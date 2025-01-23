@@ -1,15 +1,13 @@
 {% extends '_layout' %}
 
 {% block content %}
-  <nav class="header-secondary-nav">
-        <ul>
-            <li class="header-secondary-nav-li"><a href="./portraits">Portrait</a></li>
-            |
-            <li class="header-secondary-nav-li"><a href="./">Family</a></li>
-            |
-            <li class="header-secondary-nav-li"><a href="./b">Branding</a></li>
-        </ul>
-    </nav>
+
+{# -----Secondary nav------ #}
+
+  {% include 'includes/cp.secondaryNav.twig'%}
+
+{# -----/Secondary nav------ #}  
+
   <div class="image-grid top-div-global">
 
     {% set portfolioImageQuery = entry.portfolioImageMatrix.all() %}
@@ -19,7 +17,9 @@
         {% include 'includes/cp.ImageCollageGrid.twig' with { 
           
           imageSelect: portfolioImagePrint.image,
-          imageOrientation: portfolioImagePrint.imageOrientation, }%}
+          imageOrientation: portfolioImagePrint.imageOrientation, 
+          galleryTitle: portfolioImagePrint.galleryTextTitle,
+          galleryBlurb: portfolioImagePrint.galleryText,}%}
 
         {% endfor %}
   </div>

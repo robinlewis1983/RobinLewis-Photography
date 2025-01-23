@@ -41,26 +41,10 @@
         
         </div>
 {# -------- Main NAV --------- #}
-        <nav class="header-nav"> 
-            <ul>
-                <li class="header-nav-li"><a href="/" class="{{ craft.app.request.url == '/' ? 'active' : '' }}">Home</a></li>
-                <li class="header-nav-li"><a href="#about" class="{{ craft.app.request.url == '/about' ? 'active' : '' }}" >About</a></li>
-                <li class="header-nav-li"><a href="#testimonials"  class="{{ craft.app.request.url == '/testimonials' ? 'active' : '' }}" >Testimonials</a></li>
-                <li class="header-nav-li"><a href="#contact" class="{{ craft.app.request.url == '/contact' ? 'active' : '' }}" >Contact </a></li>
-                
-            </ul>
-        </nav>
-{# -------- Secondary  NAV --------- #}
 
-          {# <nav class="header-secondary-nav">
-        <ul>
-            <li class="header-secondary-nav-li"><a href="./portraits">Portrait</a></li>
-            |
-            <li class="header-secondary-nav-li"><a href="./">Family</a></li>
-            |
-            <li class="header-secondary-nav-li"><a href="./b">Branding</a></li>
-        </ul>
-    </nav> #}
+  {% include 'includes/cp.mainNav.twig'%}
+
+{# -----/Main Nav------ #}  
 
     </header>
 
@@ -82,7 +66,6 @@
 </div>
 
 <p>All images - Copywrite Robin Lewis</P>
-
 
 
 </footer>

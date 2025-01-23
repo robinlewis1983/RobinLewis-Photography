@@ -2,9 +2,9 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   - 1817c8ed-6f31-4539-899c-acb78561c62e # Portfolio Entries
-handle: portraits
+handle: family
 maxAuthors: 1
-name: Portraits
+name: Family
 previewTargets:
   -
     __assoc__:
@@ -22,6 +22,6 @@ siteSettings:
   e8822b3c-5261-418e-b270-6dd61620b23b: # robinlewisphotography
     enabledByDefault: true
     hasUrls: true
-    template: pages/_portrait.twig
-    uriFormat: portraits
+    template: pages/_family.twig
+    uriFormat: family
 type: single

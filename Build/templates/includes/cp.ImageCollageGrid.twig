@@ -1,6 +1,8 @@
   
   {% set imageSelect = imageSelect ?? null %}
   {% set imageOrientation = imageOrientation ?? null %}
+  {% set galleryTitle = galleryTitle ?? null %}
+  {% set galleryBlurb = galleryBlurb ?? null %}
 
 
 
@@ -16,5 +18,23 @@
 
      {% set Horizontal = imageOrientation %}
       <img class="{% if Horizontal %}horozontalImage{% else %}verticalImage{% endif %}" style="{{ imgStyles is defined ? imgStyles }}" src="{{ img.getUrl() }}" alt="{{  img.alt }}">
+
+        {% else %}
+            {# Output the gallery title and blurb if there is no image #}
+            {% if galleryTitle or galleryBlurb %}
+                <div class="galleryTextBlock">
+                    {% if galleryTitle %}
+                        <h2 class="underLine">{{ galleryTitle | title}}</h2>
+                    {% endif %}
+                    {% if galleryBlurb %}
+                        <p>{{ galleryBlurb }}</p>
+                    {% endif %}
+                </div>
+            {% endif %}
+
+
+
+
+
 {% endif %}
 

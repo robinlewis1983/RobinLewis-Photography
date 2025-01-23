@@ -112,25 +112,23 @@ a {
     border: 1px solid #ffffff;
     z-index: 999;
     position: sticky;
+    overflow: visible;
 
 }
 
   /* Nav bar */
 
-  .nav{
-
-    font-family:'lato';
-    color:black;
+  .nav {
+    font-family: 'lato';
+    color: black;
     font-size: medium;
     font-weight: lighter;
-    overflow: hidden; 
+    overflow: hidden;
     padding-bottom: 10px;
     padding-top: 25px;
-    }
-   
-
+  }
+  
   .nav ul {
-
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -140,29 +138,66 @@ a {
     justify-content: center;
     list-style-type: none;
   }
-
+  
   .nav-btn {
-  margin-left: 10px;
+    margin-left: 10px;
   }
-        
-  .nav-li a { 
-  display: inline-block;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
+  
+  .nav-li {
+    position: relative;
   }
-        
-  .nav-li a:hover:not(.active) {                  
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  width:fit-content;         
-  }  
-    
+  
+  .nav-li a {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .nav-li a:hover:not(.active) {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    width: fit-content;
+  }
+  
   .active {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  width:fit-content;       
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    width: fit-content;
   }
-
+  
+  /* Dropdown menu */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(147, 137, 137);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    list-style-type: none;
+    z-index: 1001;
+  }
+  
+  .dropdown-menu li {
+    margin: 0;
+  }
+  
+  .dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-li:hover > .dropdown-menu {
+    display: block;
+    z-index: 1001; /* Ensure dropdown appears above other elements */
+  }
 
   .header-logo{
     display: flex;
