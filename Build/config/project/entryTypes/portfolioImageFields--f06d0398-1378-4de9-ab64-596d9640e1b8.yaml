@@ -67,6 +67,12 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+        name: Image
+        uid: 1a300c12-0764-4396-a8c5-0bc168e4c88b
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
           -
             dateAdded: '2025-01-23T10:03:18+00:00'
             elementCondition: null
@@ -99,8 +105,8 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: Content
-        uid: 1a300c12-0764-4396-a8c5-0bc168e4c88b
+        name: 'Gallery Text'
+        uid: 142ecce4-13ab-48a3-934c-c181a411209f
         userCondition: null
 handle: portfolioImageFields
 hasTitleField: true
