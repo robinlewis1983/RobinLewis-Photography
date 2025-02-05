@@ -1,7 +1,8 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 1817c8ed-6f31-4539-899c-acb78561c62e # Portfolio Entries
+  -
+    uid: 1817c8ed-6f31-4539-899c-acb78561c62e # Portfolio Entries
 handle: portraits
 maxAuthors: 1
 name: Portraits

@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  b509c91b-3ae5-4890-b13b-4aa94a2a85d7:
+  6e1e8602-8d95-4c3b-8819-0b2d95c82d21:
     tabs:
       -
         elementCondition: null
@@ -10,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2025-01-10T11:34:03+00:00'
+            dateAdded: '2025-02-02T16:17:17+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -31,15 +31,31 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: d9059474-3221-4129-8fa3-b19dd95ae1d2
+            uid: 2ab18405-a040-4ad3-bc33-06d77affa1fa
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2025-01-10T11:35:25+00:00'
+            dateAdded: '2025-02-02T16:19:35+00:00'
             elementCondition: null
-            fieldUid: c48f8a07-3378-4e89-9425-a50ee6db2d03 # Portfolio Image Matrix
-            handle: null
+            fieldUid: 71c7dcde-5d2c-4f5d-8c11-d0c3f39d2d90 # Plain Text
+            handle: PackagesTilte
+            includeInCards: false
+            instructions: null
+            label: 'Packages Title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6a8d3bc8-41f9-4f58-a3c8-4eecb1a96a32
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-02T16:19:35+00:00'
+            elementCondition: null
+            fieldUid: 71c7dcde-5d2c-4f5d-8c11-d0c3f39d2d90 # Plain Text
+            handle: plainText2
             includeInCards: false
             instructions: null
             label: null
@@ -47,33 +63,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f66969c1-4da2-456d-9e0c-98520bf82d14
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2025-02-02T16:22:14+00:00'
-            elementCondition: null
-            fieldUid: 838589ab-faf8-4b1b-9628-414f6adb1d03 # Packages Matrix
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: b194e510-6d1d-41e1-a9f1-61d3536bf65d
+            uid: a12e4c8a-075e-4c87-b73b-60bc765eda8c
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 558d9c3a-d761-407a-b497-faa0214fdd40
+        uid: 461bf7f7-db1a-4e30-812e-ae31be324df0
         userCondition: null
-handle: portfolioEntries
+handle: packagesFields
 hasTitleField: true
 icon: null
-name: 'Portfolio Entries'
+name: 'Packages fields'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

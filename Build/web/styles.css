@@ -49,6 +49,17 @@ html {
 
 /*-------- Global Styling ----------*/
 
+.button {
+
+  display: inline-block; /* this inline block is what is stopping the button expanding the the size of the whole colum and keeping insize with it's content - test and see what happens  */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background-color: #263551;
+  padding: 25px 20px ;
+  margin-top: 35px;
+  }
+
 
 .underLine {
   position: relative; /* Required for positioning the pseudo-element */
@@ -554,7 +565,7 @@ a {
 
    .galleryTextBlock{
 
-    grid-row: span 2;
+    grid-row: span 3;
     grid-column: span 4;
 
     /* Flexbox for centering */
@@ -588,6 +599,21 @@ a {
     max-width: 90%;
     margin: 0 auto;
 
+  }
+
+  .galleryButton {
+    /* Flexbox for centering */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center;
+
+    /* Additional styles for spacing and typography */
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    padding: 20px; /* Adjust padding as needed for spacing */
+    
   }
 
 
@@ -624,7 +650,7 @@ a {
       }
 
       .galleryTextBlock p{
-        max-width: 60%;
+        max-width: 80%;
       }
 
   

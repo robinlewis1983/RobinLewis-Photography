@@ -105,6 +105,22 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2025-02-02T15:57:20+00:00'
+            elementCondition: null
+            fieldUid: 3d5f6015-d5e1-4cac-a69d-184bb3272456 # Packages Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ab411a9a-99ee-4d4c-8dae-5b9559fa4e60
+            userCondition: null
+            warning: null
+            width: 100
         name: 'Gallery Text'
         uid: 142ecce4-13ab-48a3-934c-c181a411209f
         userCondition: null

@@ -3,6 +3,7 @@
   {% set imageOrientation = imageOrientation ?? null %}
   {% set galleryTitle = galleryTitle ?? null %}
   {% set galleryBlurb = galleryBlurb ?? null %}
+  {% set packagesLink = packagesLink ?? null %}
 
 
 
@@ -29,6 +30,10 @@
                     {% if galleryBlurb %}
                         <p>{{ galleryBlurb }}</p>
                     {% endif %}
+                    
+            {% if packagesLink %}
+                    {% include 'includes/cp.button.twig'%}
+            {% endif %}        
                 </div>
             {% endif %}
 

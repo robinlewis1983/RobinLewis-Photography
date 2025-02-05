@@ -1,4 +1,4 @@
-dateModified: 1737747289
+dateModified: 1738513431
 elementSources:
   craft\elements\Entry:
     -
@@ -68,6 +68,7 @@ fs:
 meta:
   __names__:
     0f4a048d-e915-4261-b260-f98812d5fb01: 'Image and Link Fields' # Image and Link Fields
+    3d5f6015-d5e1-4cac-a69d-184bb3272456: 'Packages Link' # Packages Link
     21fa5440-e495-4f1c-a78e-b79289a66872: 'Phone Number' # Phone Number
     22f98ad0-da64-4418-a69c-4ecd5ba6c1db: 'Social Link Fields' # Social Link Fields
     27edeb8b-b368-465d-9017-a3be89de9475: 'Hompage Matrix' # Hompage Matrix
@@ -76,6 +77,7 @@ meta:
     71c7dcde-5d2c-4f5d-8c11-d0c3f39d2d90: 'Plain Text' # Plain Text
     89d33f72-fcf9-4473-bbc6-ec6df06d01f1: 'Image Orientation' # Image Orientation
     93effb0d-6481-4f7d-af2c-bd3dae9bbda7: Family # Family
+    97eeabb8-f9e9-4d8a-a8ce-334c330494c0: 'Packages fields' # Packages fields
     403f1f6c-5921-4a3c-9094-ed17a297b70d: 'Global Logo' # Global Logo
     967cdc9e-1b47-4ed5-8b0f-d856830cb6ec: 'Cover Image Field' # Cover Image Field
     1766f1db-7bdd-44cc-9792-55ee4b071d01: Branding # Branding
@@ -83,6 +85,7 @@ meta:
     3224c030-906f-4fa7-a439-7a2bbff1c5e8: 'Image Entry' # Image Entry
     46868f8d-e176-4440-a5c0-174dea2e8620: 'About Fields' # About Fields
     54380d1b-4b0f-414e-9603-e5ed1f814f15: 'Contact Fields' # Contact Fields
+    838589ab-faf8-4b1b-9628-414f6adb1d03: 'Packages Matrix' # Packages Matrix
     a7b6eed5-5b9f-49a8-94d2-3afe027dc912: 'Image and Link Matrix' # Image and Link Matrix
     b0595521-507d-4100-a0e8-9ba3435a5414: 'Socials Matrix' # Socials Matrix
     b7314d5c-2fac-4a88-8202-9aa7264d94d1: 'Public Schema' # Public Schema

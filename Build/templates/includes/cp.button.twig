@@ -1,0 +1,7 @@
+
+
+{% set class = class | default('button') %}
+
+{%set link = portfolioImagePrint.packagesLink %}
+
+<a class="{{ class }}" href={{ link.getUrl() }} download>Packages</a>

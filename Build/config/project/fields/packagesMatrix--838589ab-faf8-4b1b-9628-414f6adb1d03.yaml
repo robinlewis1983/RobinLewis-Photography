@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: packagesMatrix
+instructions: null
+name: 'Packages Matrix'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 97eeabb8-f9e9-4d8a-a8ce-334c330494c0 # Packages fields
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
