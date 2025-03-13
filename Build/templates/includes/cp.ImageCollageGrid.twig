@@ -18,7 +18,7 @@
          {% endif %}
 
      {% set Horizontal = imageOrientation %}
-      <img class="{% if Horizontal %}horozontalImage{% else %}verticalImage{% endif %}" style="{{ imgStyles is defined ? imgStyles }}" src="{{ img.getUrl() }}" alt="{{  img.alt }}">
+      <img class="{% if Horizontal %}horizontalImage{% else %}verticalImage{% endif %}" style="{{ imgStyles is defined ? imgStyles }}" src="{{ img.getUrl() }}" alt="{{  img.alt }}">
 
         {% else %}
             {# Output the gallery title and blurb if there is no image #}

@@ -1,10 +1,11 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 1817c8ed-6f31-4539-899c-acb78561c62e # Portfolio Entries
-handle: branding
+  -
+    uid: 1817c8ed-6f31-4539-899c-acb78561c62e # Portfolio Entries
+handle: projects
 maxAuthors: 1
-name: Branding
+name: 'Personal Projects'
 previewTargets:
   -
     __assoc__:
@@ -22,6 +23,6 @@ siteSettings:
   e8822b3c-5261-418e-b270-6dd61620b23b: # robinlewisphotography
     enabledByDefault: true
     hasUrls: true
-    template: pages/_branding.twig
-    uriFormat: branding
+    template: pages/_personalProjects.twig
+    uriFormat: projects
 type: single

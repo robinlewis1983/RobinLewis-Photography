@@ -513,8 +513,9 @@ a {
    .image-grid {
 
     --gap: 5px;
-    --num-cols: 4;
-    --row-height: 200px;
+    --num-cols: 8;
+    /* --row-height: 200px; */
+    --row-height: auto;
 
     box-sizing: border-box;
 
@@ -522,6 +523,8 @@ a {
     grid-template-columns: repeat(var(--num-cols), 1fr);
     grid-auto-rows: var(--row-height);
     gap: var(--gap);
+
+    padding: 10px;
 
    }
 
@@ -550,7 +553,7 @@ a {
 
    }
 
-   .horozontalImage{
+   .horizontalImage{
     
     grid-row: span 2;
     grid-column: span 4;
@@ -566,7 +569,7 @@ a {
    .galleryTextBlock{
 
     grid-row: span 3;
-    grid-column: span 4;
+    grid-column: span 8;
 
     /* Flexbox for centering */
     display: flex;
@@ -601,20 +604,7 @@ a {
 
   }
 
-  .galleryButton {
-    /* Flexbox for centering */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-    align-items: center; /* Centers content horizontally */
-    text-align: center;
-
-    /* Additional styles for spacing and typography */
-    font-family: 'Lato', sans-serif;
-    font-size: 1.2rem;
-    padding: 20px; /* Adjust padding as needed for spacing */
-    
-  }
+  /* .galleryButton {} */
 
 
 
@@ -625,19 +615,18 @@ a {
     
     .image-grid{
         --num-cols: 8;
-        --row-height: 300px;
+       /* --row-height: 200px;   === REMOVED AS if fixes some IMAGES which STRETCHED BUT IT DOES AFFECT TECT BOX */
         margin: 0px 100px 50px 100px;
     }
 
-    .horozontalImage{
-    
-      grid-row: span 2;
-      grid-column: span 4;
+    .horizontalImage{
+
+      grid-row: span 1;
+      grid-column: span 2;
   
      }
   
      .verticalImage{
-  
       grid-row: span 2;
       grid-column: span 2;
      }
@@ -646,7 +635,7 @@ a {
       grid-row: span 2;
       grid-column: span 4;
       justify-content:flex-start;
-      padding: 80px 20px;
+      /* padding: 80px 20px; -- REMOVED TO HELP TEXT BOX BUT LOOKS BETTER WITH PADDING*/
       }
 
       .galleryTextBlock p{
