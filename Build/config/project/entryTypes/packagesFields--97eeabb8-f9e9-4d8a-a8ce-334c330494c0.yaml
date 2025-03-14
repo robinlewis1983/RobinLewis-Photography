@@ -52,18 +52,18 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2025-02-02T16:19:35+00:00'
+            dateAdded: '2025-03-14T12:06:38+00:00'
             elementCondition: null
-            fieldUid: 71c7dcde-5d2c-4f5d-8c11-d0c3f39d2d90 # Plain Text
-            handle: plainText2
+            fieldUid: 3bb207e3-69fd-4bc8-8b30-0df5f18fb493 # Rich Text
+            handle: packageRichText
             includeInCards: false
             instructions: null
-            label: null
+            label: 'Package Rich Text'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: a12e4c8a-075e-4c87-b73b-60bc765eda8c
+            uid: b5d96f7f-349c-413f-9726-e17cd70963dc
             userCondition: null
             warning: null
             width: 100

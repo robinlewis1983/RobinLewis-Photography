@@ -4,6 +4,7 @@
 
 {% block content %}
 
+{% set homepageGalleryQuery = entry.homepageImageMatrix.all () %}
 {% set homepageQuery = entry.homepageMatrix.all () %}
 
 {# -----Secondary nav------ #}
@@ -12,12 +13,29 @@
 
 {# -----/Secondary nav------ #}  
 
-<section class="coverPhoto top-div-global">
+{# -----Gallery Section------ #}
+
+    <div class="image-grid-homepage top-div-global">
+
+        {% for homepageGalleryImagePrint in homepageGalleryQuery %}
+
+        {% include 'includes/cp.ImageCollageGrid.twig' with { 
+          
+          imageSelect: homepageGalleryImagePrint.image,
+          imageOrientation: homepageGalleryImagePrint.imageOrientation, 
+          
+        }%}
+        {% endfor %}
+  </div>
+
+{# ------- Cover Photo Section --------- #}
+
+{# <section class="coverPhoto top-div-global">
 
     {% for coverImageQuery in homepageQuery %}
 
      
-        {% if loop.index == 1 %}       {# Looks at only the first block in the loop #}
+        {% if loop.index == 1 %}      
 
         {% set imageQuery = coverImageQuery.coverImage.one() %}
             <a href="./" ><img src="{{ imageQuery.getUrl() }}" alt="{{ imageQuery.alt ?? 'Default alt text' }}"></a>
@@ -25,20 +43,20 @@
 
     {% endfor %}
 
-</section>
+</section> #}
 
 
 {# ------- About Section --------- #}
 
-<section id="about">
+<section class="homepageMargin" id="about">
 
 {% for aboutBlockPrint in homepageQuery %}
-    {% if loop.index == 2 %}
+    {% if loop.index == 2 %}  {# Looks at only the Second block in the loop #}
 
     {% include 'includes/cp.mediablock.twig' with {
 
         mediahHeader: aboutBlockPrint.aboutTitle,
-        mediaContentQoute: aboutBlockPrint.aboutBlurb,
+        mediaContentQoute: aboutBlockPrint.aboutBlurbRichText,
         mediaContentImg: aboutBlockPrint.aboutImage,
     }
 
@@ -52,7 +70,7 @@
 
 {# ------- Profile showcase Section --------- #}
 
-<section class="">
+<section class="homepageMargin">
 
 
 
@@ -87,7 +105,7 @@
 
 {# ------- Testimonials Section --------- #}
 
-<section id="testimonials" class="qouteSection">
+<section id="testimonials" class="qouteSection homepageMargin">
 
 {% for testimonialBlockPrint in homepageQuery %}
     {% if loop.index == 4 %}
@@ -95,9 +113,9 @@
     {% include 'includes/cp.qouteBlock.twig' with {
                
                 qouteBlockTilte:testimonialBlockPrint.testimonialPageTitle,
-                qouteText1:testimonialBlockPrint.testimonial1,
-                qouteText2:testimonialBlockPrint.testimonial2,
-                qouteText3:testimonialBlockPrint.testimonial3,
+                qouteText1:testimonialBlockPrint.testimonialRT1,
+                qouteText2:testimonialBlockPrint.testimonialRT2,
+                qouteText3:testimonialBlockPrint.testimonialRT3,
                 clientName1:testimonialBlockPrint.clientName1,
                 clientName2:testimonialBlockPrint.clientName2,
                 clientName3:testimonialBlockPrint.ClientName3,
@@ -114,7 +132,7 @@
 
 {# ------- Contact Section --------- #}
 
-<section id="contact">
+<section id="contact" class="homepageMargin">
 
 {% for contactBlockPrint in homepageQuery %}
     {% if loop.index == 5 %}
@@ -122,7 +140,7 @@
     {% include 'includes/cp.mediablock.twig' with {
         
         mediahHeader: contactBlockPrint.contactTitle,
-        mediaContentQoute: contactBlockPrint.ContactBlurb,
+        mediaContentQoute: contactBlockPrint.contactBlurbRichText,
         mediaContentImg: contactBlockPrint.contactImage,
         mediaEmail: contactBlockPrint.email,
 

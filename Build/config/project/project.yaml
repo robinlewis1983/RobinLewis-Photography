@@ -1,4 +1,4 @@
-dateModified: 1741797202
+dateModified: 1741973869
 elementSources:
   craft\elements\Entry:
     -
@@ -67,13 +67,16 @@ fs:
     url: '@uploads'
 meta:
   __names__:
+    0c0ca02f-2da5-411b-b40a-da3925516c76: 'Second Portfolio Image Matrix' # Second Portfolio Image Matrix
     0f4a048d-e915-4261-b260-f98812d5fb01: 'Image and Link Fields' # Image and Link Fields
+    3bb207e3-69fd-4bc8-8b30-0df5f18fb493: 'Rich Text' # Rich Text
     3d5f6015-d5e1-4cac-a69d-184bb3272456: 'Packages Link' # Packages Link
     21fa5440-e495-4f1c-a78e-b79289a66872: 'Phone Number' # Phone Number
     22f98ad0-da64-4418-a69c-4ecd5ba6c1db: 'Social Link Fields' # Social Link Fields
     27edeb8b-b368-465d-9017-a3be89de9475: 'Hompage Matrix' # Hompage Matrix
     34a7da35-3197-44f1-85f1-eb177455a6be: Homepage # Homepage
     46ff8039-5255-4304-bc5a-b1d089930789: 'Testimonial Fields' # Testimonial Fields
+    47e888a3-8fb0-4811-baca-178f6dd64c3e: Simple # Simple
     71c7dcde-5d2c-4f5d-8c11-d0c3f39d2d90: 'Plain Text' # Plain Text
     89d33f72-fcf9-4473-bbc6-ec6df06d01f1: 'Image Orientation' # Image Orientation
     93effb0d-6481-4f7d-af2c-bd3dae9bbda7: Family # Family
@@ -92,6 +95,7 @@ meta:
     c6a293d1-b272-4b4d-b7f8-e0cf2cf97e1e: 'Page Link 3' # Page Link 3
     c48f8a07-3378-4e89-9425-a50ee6db2d03: 'Portfolio Image Matrix' # Portfolio Image Matrix
     c53d45ab-75ea-437b-a618-61e511f64fa1: 'Social Links' # Social Links
+    c70ae636-b1ed-4218-b81e-a08fe577787c: 'Rich Text 1' # Rich Text 1
     d0ba20c4-e65c-4b8d-a368-0921241d1850: 'Homepage Entries' # Homepage Entries
     d0c2f052-7110-43de-b280-48835e09c45c: robinlewisphotography # robinlewisphotography
     d04ca8a1-d0a2-4b01-baa5-79388eec9e70: Portraits # Portraits
@@ -101,6 +105,11 @@ meta:
     f0265ab0-0f4f-4606-81fb-fb039a85dc7f: Image # Image
     f06d0398-1378-4de9-ab64-596d9640e1b8: 'portfolio Image Fields' # portfolio Image Fields
     f31ae68e-05a6-46b8-8f95-461ac5246bb2: Images # Images
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
 system:
   edition: solo
   live: true

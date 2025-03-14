@@ -1,0 +1,45 @@
+  
+  {% set imageSelect = imageSelect ?? null %}
+  {% set imageOrientation = imageOrientation ?? null %}
+  {% set galleryTitle = galleryTitle ?? null %}
+  {% set galleryBlurb = galleryBlurb ?? null %}
+  {% set packagesLink = packagesLink ?? null %}
+
+
+
+ {% if imageSelect | length %}
+    {% set img = imageSelect.one() %}
+
+        {# This is collecting the focal point infomation from Craft and outputting it as a style on the <IMG> #}
+         {% if img.hasFocalPoint %} 
+              {% set x = img.focalPoint | first * 100 ~ '%' %}
+              {% set y = img.focalPoint | last * 100 ~ '%' %}
+              {% set imgStyles = ' object-position: ' ~ [x, y]|join(' ') %}
+         {% endif %}
+
+     {% set Horizontal = imageOrientation %}
+      <img class="{% if Horizontal %}horizontalImage{% else %}verticalImage{% endif %}" style="{{ imgStyles is defined ? imgStyles }}" src="{{ img.getUrl() }}" alt="{{  img.alt }}">
+
+        {% else %}
+            {# Output the gallery title and blurb if there is no image #}
+            {% if galleryTitle or galleryBlurb %}
+                <div class="galleryTextBlock">
+                    {% if galleryTitle %}
+                        <h2 class="underLine">{{ galleryTitle | title}}</h2>
+                    {% endif %}
+                    {% if galleryBlurb %}
+                        <p>{{ galleryBlurb }}</p>
+                    {% endif %}
+                    
+            {% if packagesLink %}
+                    {% include 'includes/cp.button.twig'%}
+            {% endif %}        
+                </div>
+            {% endif %}
+
+
+
+
+
+{% endif %}
+

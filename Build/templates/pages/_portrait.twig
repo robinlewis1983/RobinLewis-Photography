@@ -19,15 +19,36 @@
           imageSelect: portfolioImagePrint.image,
           imageOrientation: portfolioImagePrint.imageOrientation, 
           galleryTitle: portfolioImagePrint.galleryTextTitle,
-          galleryBlurb: portfolioImagePrint.galleryText,
+          galleryBlurb: portfolioImagePrint.galleryRichText,
+          packagesLink: portfolioImagePrint.packagesLink,}%}
+        {% endfor %}
+  </div>
+
+ {# <div id="packages">
+
+  Add packages
+
+  </div> #}
+
+    <div class="image-grid top-div-global" id="headshots">
+
+    {% set portfolioImageQuery = entry.secondPortfolioImageMatrix.all() %}
+
+        {% for portfolioImagePrint in portfolioImageQuery %}
+
+        {% include 'includes/cp.ImageCollageGrid.twig' with { 
+          
+          imageSelect: portfolioImagePrint.image,
+          imageOrientation: portfolioImagePrint.imageOrientation, 
+          galleryTitle: portfolioImagePrint.galleryTextTitle,
+          galleryBlurb: portfolioImagePrint.galleryRichText,
           packagesLink: portfolioImagePrint.packagesLink,}%}
         {% endfor %}
   </div>
 
   {# <div id="packages">
 
-    Package include ?????? like the three grof block?
-    What does it link to in Craft?
+  Add packages
 
   </div> #}
 {% endblock %}

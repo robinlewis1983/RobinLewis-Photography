@@ -36,6 +36,22 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-03-14T17:37:44+00:00'
+            elementCondition: null
+            fieldUid: c48f8a07-3378-4e89-9425-a50ee6db2d03 # Portfolio Image Matrix
+            handle: homepageImageMatrix
+            includeInCards: false
+            instructions: null
+            label: 'Homepage Image Matrix'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f71c16ad-5c46-404f-82a0-7c42bf7df83c
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2025-01-11T16:37:17+00:00'
             elementCondition: null
             fieldUid: 27edeb8b-b368-465d-9017-a3be89de9475 # Hompage Matrix

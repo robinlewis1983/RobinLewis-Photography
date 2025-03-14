@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: secondPortfolioImageMatrix
+instructions: null
+name: 'Second Portfolio Image Matrix'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - f06d0398-1378-4de9-ab64-596d9640e1b8 # portfolio Image Fields
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: true
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

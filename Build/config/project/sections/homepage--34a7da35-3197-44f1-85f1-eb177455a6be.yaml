@@ -1,7 +1,8 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - d0ba20c4-e65c-4b8d-a368-0921241d1850 # Homepage Entries
+  -
+    uid: d0ba20c4-e65c-4b8d-a368-0921241d1850 # Homepage Entries
 handle: homepage
 maxAuthors: 1
 name: Homepage

@@ -1,0 +1,32 @@
+headingLevels:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+name: 'Rich Text 1'
+options:
+  alignment:
+    options:
+      - left
+      - right
+  fontSize:
+    options:
+      - tiny
+      - small
+      - big
+      - huge
+toolbar:
+  - heading
+  - alignment
+  - '|'
+  - bold
+  - italic
+  - underline
+  - strikethrough
+  - link
+  - fontSize
+  - fontBackgroundColor
+  - blockQuote
+  - bulletedList

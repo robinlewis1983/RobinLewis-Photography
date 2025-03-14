@@ -9,20 +9,20 @@
 {# -----/Secondary nav------ #}  
 
   <div class="image-grid top-div-global">
-
     {% set portfolioImageQuery = entry.portfolioImageMatrix.all() %}
 
-        {% for portfolioImagePrint in portfolioImageQuery %}
+    {% for portfolioImagePrint in portfolioImageQuery %}
+        <div class="grid-item">
+            {% include 'includes/cp.ImageCollageGrid.twig' with {
+                imageSelect: portfolioImagePrint.image,
+                imageOrientation: portfolioImagePrint.imageOrientation,
+                galleryTitle: portfolioImagePrint.galleryTextTitle,
+                galleryBlurb: portfolioImagePrint.galleryText
+            } %}
+        </div>
+    {% endfor %}
+</div>
 
-        {% include 'includes/cp.ImageCollageGrid.twig' with { 
-          
-          imageSelect: portfolioImagePrint.image,
-          imageOrientation: portfolioImagePrint.imageOrientation, 
-          galleryTitle: portfolioImagePrint.galleryTextTitle,
-          galleryBlurb: portfolioImagePrint.galleryRichText,}%}
-
-        {% endfor %}
-  </div>
 {% endblock %}
 
 

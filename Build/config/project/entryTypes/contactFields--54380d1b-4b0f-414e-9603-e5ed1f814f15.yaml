@@ -68,18 +68,18 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2025-01-11T16:42:41+00:00'
+            dateAdded: '2025-03-14T12:04:14+00:00'
             elementCondition: null
-            fieldUid: 71c7dcde-5d2c-4f5d-8c11-d0c3f39d2d90 # Plain Text
-            handle: ContactBlurb
+            fieldUid: 3bb207e3-69fd-4bc8-8b30-0df5f18fb493 # Rich Text
+            handle: contactBlurbRichText
             includeInCards: false
             instructions: null
-            label: 'Contact Blurb'
+            label: 'Contact Blurb Rich Text'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 99e00690-6110-4e09-9df6-48d1e3055975
+            uid: d2f1a19b-bd59-4d40-888f-9f94ef273730
             userCondition: null
             warning: null
             width: 100
